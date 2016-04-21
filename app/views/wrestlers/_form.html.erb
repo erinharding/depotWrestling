@@ -1,0 +1,37 @@
+<%= form_for(@wrestler) do |f| %>
+  <% if @wrestler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wrestler.errors.count, "error") %> prohibited this wrestler from being saved:</h2>
+
+      <ul>
+      <% @wrestler.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :biography %><br>
+    <%= f.text_area :biography, rows:4 %>
+  </div>
+  <div class="field">
+    <%= f.label :image_url %><br>
+    <%= f.text_field :image_url %>
+  </div>
+  <div class="field">
+    <%= f.label :ranking %><br>
+    <%= f.text_field :ranking %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br>
+    <%= f.text_field :weight %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

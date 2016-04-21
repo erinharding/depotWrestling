@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wrestler.name %>
+</p>
+
+<p>
+  <strong>Biography:</strong>
+  <%= @wrestler.biography %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @wrestler.image_url %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @wrestler.ranking %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @wrestler.weight %>
+</p>
+
+<%= link_to 'Edit', edit_wrestler_path(@wrestler) %> |
+<%= link_to 'Back', wrestlers_path %>

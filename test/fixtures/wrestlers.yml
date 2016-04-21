@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  biography: MyText
+  image_url: MyString
+  ranking: 9.99
+  weight: 9.99
+
+two:
+  name: MyString
+  biography: MyText
+  image_url: MyString
+  ranking: 9.99
+  weight: 9.99
